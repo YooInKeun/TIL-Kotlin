@@ -17,3 +17,19 @@ val answerString: String = if (score >= 90) {
     "C"
 }
 println(answerString)
+
+// when 사용법
+fun describe(obj: Any): String =
+        when (obj) {
+            3 -> "Three"
+            "Hi" -> "Bye"
+            is Long -> "Long Type"
+            is String -> "String Type"
+            else -> "Unknown"
+        }
+
+println(describe(3)) // Three
+println(describe("Hi")) // Bye
+println(describe("Hello")) // String Type
+println(describe(123L)) // Long Type
+println(describe(1)) // Unkown
