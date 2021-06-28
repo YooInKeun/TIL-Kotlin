@@ -10,5 +10,13 @@ fun getLength(obj: Any): Int? {
     return null
 }
 
-println(getStringLength("muyaho"))
-println(getStringLength(12345))
+// when 사용하기
+//fun getLength(obj: Any): Int? =
+//    when (obj) {
+//        is String -> obj.length
+//        is Number -> obj.toString().length
+//        else -> null
+//    }
+
+println(getLength("muyaho"))
+println(getLength(12345))
