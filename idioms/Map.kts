@@ -6,3 +6,7 @@ println(unmodifiableMap)
 val mutableMap = mutableMapOf(0 to "a", 1 to "b", 2 to "c")
 mutableMap[2] = "d"
 println(mutableMap)
+
+for ((key, value) in mutableMap) {
+    println("$key : $value")
+}
